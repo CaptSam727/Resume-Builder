@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <!--Bootstrap js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!--Css stylesheet-->
+    <link rel="stylesheet" href="static/css/styles.css">
+    <!--jQuery CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--Fontawesome Kit-->
+    <script src="https://kit.fontawesome.com/2f9bd23a36.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Generator</title>
+</head>
+
+<body>
+
+    <section>
+
+        <div class="container-fluid">
+            <h2 class="text-center">Resume Generator</h2>
+            <form action="/resumePage.html" method="post">
+
+                <div class="row mt-2">
+
+                    <div class="col" style="margin: 2%;">
+                        <!-- <div class="mb-3">
+                            <label for="formFileSm" class="form-label">Select a profile image</label>
+                            <input class="form-control form-control-sm" id="formFileSm" type="file" name="profileImg">
+                        </div> -->
+                        <div class="mb-3">
+                            <label for="FormControlInputName" class="form-label" required>Name</label>
+                            <input type="text" class="form-control" id="FormControlInputName" name="name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="FormControlInputContact" class="form-label" required>Phone number</label>
+                            <input type="text" class="form-control" id="FormControlInputContact" name="phNumber">
+                        </div>
+                        <div class="mb-3">
+                            <label for="FormControlInputEmail" class="form-label" required>Email address</label>
+                            <input type="email" class="form-control" id="FormControlInputEmail" name="email"
+                                placeholder="name@example.com">
+                        </div>
+                        <div class="mb-2">
+                            <label for="FormControlInputLink" class="form-label">Social media links</label>
+                            <input type="text" class="form-control links mb-1" id="FormControlInputLink" name="link"
+                                placeholder="LinkedIn, GitHub, Instagram, etc.">
+                        </div>
+                        <div class="text-center"><button class="btn btn-dark" id="addLink" type="button">Add another</button></div>
+                        <div class="mb-2">
+                            <label for="FormControlInputSkill" class="form-label">Skills</label>
+                            <input type="text" class="form-control skills mb-1" id="FormControlInputSkill" name="skill">
+                        </div>
+                        <div class="text-center"><button class="btn btn-dark" id="addSkill" type="button">Add another</button></div>
+                    </div>
+
+                    <div class="col" style="margin: 2%;">
+                        <div class="mb-2">
+                            <label for="FormControlTextareaAchievement" class="form-label">Objective</label>
+                            <textarea type="text" class="form-control objective mb-1"
+                                id="FormControlTextareaObjective" name="objective" rows="3"></textarea>
+                        </div>
+                        <div class="mb-2">
+                            <label for="FormControlTextareaEducation" class="form-label">Education</label>
+                            <textarea class="form-control edu mb-1" id="FormControlTextareaEducation" name="education" rows="3"
+                                placeholder="Degree
+School
+Start Date - End Date"></textarea>
+                        </div>
+                        <div class="text-center"><button class="btn btn-dark" id="addEdu" type="button">Add another</button></div>
+                        <div class="mb-2">
+                            <label for="FormControlTextareaExperience" class="form-label">Experience</label>
+                            <textarea class="form-control work mb-1" id="FormControlTextareaExperience" name="experience" rows="3"
+                                placeholder="Position
+Company
+Start Date - End Date"></textarea>
+                        </div>
+                        <div class="text-center"><button class="btn btn-dark" id="addWork" type="button">Add another</button></div>
+                        <div class="mb-2">
+                            <label for="FormControlTextareaAchievement" class="form-label">Achievements</label>
+                            <textarea type="text" class="form-control achievement mb-1"
+                                id="FormControlTextareaAchievement" name="achievement" rows="3"></textarea>
+                        </div>
+                        <div class="text-center"><button class="btn btn-dark" id="addAchievement" type="button">Add another</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="text-center"><button type="submit" class="btn btn-dark">Generate Resume</button></div>
+            </form>
+        </div>
+
+    </section>
+
+    <!--js-->
+    <script src="static/js/script.js"></script>
+</body>
+
+</html>
